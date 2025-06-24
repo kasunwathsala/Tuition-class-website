@@ -5,13 +5,14 @@ import { Home} from './pages/home/home';
 import { Classes } from './pages/classes/classes';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { AboutUs } from './pages/about-us/about-us';
+import { Footer } from './common/footer/footer';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Header, Home,AboutUs,Classes,ContactUs],
+  imports: [Header, Home,AboutUs,Classes,ContactUs,Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
