@@ -9,7 +9,15 @@
         <p>
           With features like class scheduling, student data management, communication tools, and performance tracking, eduManage brings clarity, efficiency, and control to educational environments — all in one secure platform.
         </p>
-        <a href="#" class="btn btn-primary mt-3 px-4">Learn More</a>
+        <button (click)="Button()" style="display: inline-block; width: 150px; padding: 10px; border-radius: 8px; background-color: #007bff; color: white; text-align: center; text-decoration: none;">
+          <span *ngIf="!isContentVisible">Read More</span>
+          <span *ngIf="isContentVisible">Hide</span>
+        </button>
+
+        <h6 *ngIf="isContentVisible">eduManage is a smart and easy-to-use platform that helps schools manage their daily operations.
+It allows teachers to schedule classes, track student performance, and manage communication easily.
+Students and staff can access everything from one secure place.
+eduManage makes school management smooth, efficient, and stress-free.</h6>
       </div>
     </div>
   </div>

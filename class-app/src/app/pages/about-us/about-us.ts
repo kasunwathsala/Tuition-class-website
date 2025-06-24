@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
+// import { NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-about-us',
-  imports: [],
+  standalone: true,
+  imports: [NgIf],
   templateUrl: './about-us.html',
-  styleUrl: './about-us.css'
+  styleUrls: ['./about-us.css']
 })
 export class AboutUs {
+      
+     isContentVisible: boolean =  false;
 
+     Button(){
+      this.isContentVisible = !this.isContentVisible
+     }
 }
+
