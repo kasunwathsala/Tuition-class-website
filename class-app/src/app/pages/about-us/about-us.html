@@ -1,24 +1,48 @@
-<div class="container-fluid py-5" style="background: linear-gradient(to right, #e0f7fa, #ffffff);">
+<div class="container-fluid py-5"
+     style="background: 
+       linear-gradient(to right, rgba(42, 99, 106, 0.85), rgba(255, 255, 255, 0.85)),
+       url('https://images.unsplash.com/photo-1603574670812-d24560880210?auto=format&fit=crop&w=1470&q=80');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;">
+       
   <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-10">
-        <h2 class="mb-4 fw-bold">About Us 🎓</h2>
-        <p class="lead mb-4">
-          <strong>eduManage</strong> is a powerful, user-friendly Educational Management System built to transform the way schools and institutes operate. Our goal is to simplify administration, empower educators, and create a seamless experience for students.
+    <div class="row align-items-center g-5 py-5">
+
+      <!-- Image Section (Left) -->
+      <div class="col-12 col-lg-6 animate-left text-center">
+        <img src="https://img.freepik.com/premium-photo/young-asian-girl-students-studying-classroom_201468-1811.jpg?ga=GA1.1.1257481984.1747914231&semt=ais_items_boosted&w=740"
+             alt="About Image"
+             class="img-fluid rounded shadow"
+             width="100%"
+             height="auto"
+             loading="lazy">
+      </div>
+
+      <!-- Description Section (Right) -->
+      <div class="col-12 col-lg-6 animate-right text-dark">
+        <h2 class="mb-4 fw-bold text-center text-lg-start">About Us 🎓</h2>
+        <p class="lead mb-3">
+          <strong>eduManage</strong> is a powerful, user-friendly Educational Management System built to transform the way schools and institutes operate.
+          Our goal is to simplify administration, empower educators, and create a seamless experience for students.
         </p>
         <p>
           With features like class scheduling, student data management, communication tools, and performance tracking, eduManage brings clarity, efficiency, and control to educational environments — all in one secure platform.
         </p>
-        <button (click)="Button()" style="display: inline-block; width: 150px; padding: 10px; border-radius: 8px; background-color: #007bff; color: white; text-align: center; text-decoration: none;">
+
+        <button (click)="Button()" class="read-more-btn mt-3 btn btn-primary" style="background-color: rgb(43, 122, 95);">
           <span *ngIf="!isContentVisible">Read More</span>
           <span *ngIf="isContentVisible">Hide</span>
         </button>
 
-        <h6 *ngIf="isContentVisible">eduManage is a smart and easy-to-use platform that helps schools manage their daily operations.
-It allows teachers to schedule classes, track student performance, and manage communication easily.
-Students and staff can access everything from one secure place.
-eduManage makes school management smooth, efficient, and stress-free.</h6>
+        <h6 *ngIf="isContentVisible" class="text-muted mt-3">
+          eduManage is a smart and easy-to-use platform that helps schools manage their daily operations.<br>
+          It allows teachers to schedule classes, track student performance, and manage communication easily.<br>
+          Students and staff can access everything from one secure place.<br>
+          eduManage makes school management smooth, efficient, and stress-free.
+        </h6>
       </div>
+
     </div>
   </div>
 </div>
