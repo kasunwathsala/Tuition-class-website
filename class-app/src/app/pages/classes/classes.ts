@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-classes',
@@ -22,6 +23,16 @@ export class Classes {
     { name: 'Geography', description: 'Discover the Earth and its landscapes.' },
     { name: 'History', description: 'Understand past events and civilizations.' }
   ];
+
+  constructor(private router: Router) {
+
+  }
+
+  seeTeachers() {
+    this.router.navigate(['/teachers']);
+  }
+
+
 }
 
 
