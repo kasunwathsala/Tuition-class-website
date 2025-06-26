@@ -8,14 +8,14 @@ import { AboutUs } from './pages/about-us/about-us';
 import { Footer } from './common/footer/footer';
 import {  TimeTablesComponent } from './pages/time-tables/time-tables';
 import { TeachersComponent } from './pages/teachers/teachers';
-import { MathsLessons } from './pages/maths-lessons/maths-lessons';
+import { MathsLessonsComponent } from './pages/maths-lessons/maths-lessons';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Header, Home,AboutUs,Classes,ContactUs,Footer,RouterOutlet,TimeTablesComponent,TeachersComponent,MathsLessons],
+  imports: [Header, Home,AboutUs,Classes,ContactUs,Footer,RouterOutlet,TimeTablesComponent,TeachersComponent,MathsLessonsComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
