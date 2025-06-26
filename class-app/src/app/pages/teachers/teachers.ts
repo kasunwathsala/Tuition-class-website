@@ -32,9 +32,6 @@ export class TeachersComponent implements OnInit {
     this.filteredTeachers = this.teacherService.searchTeachers(query);
   }
 
-  // Optional: button click karama navigate wenna method ekak
-  goLesson(){
-     this.router.navigate(['/maths-lessons']);
-  }
+  
    
 }

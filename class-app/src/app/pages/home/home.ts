@@ -9,11 +9,15 @@ import { Router } from '@angular/router';
 })
 export class Home {
 
+
   constructor(private router: Router) {
 
   }
   goTimetable() {
     this.router.navigate(['/time-tables']);
   }
-
+  
+  goLesson() {
+    this.router.navigate(['/maths-lessons']);
+  }
 }

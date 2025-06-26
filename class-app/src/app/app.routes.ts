@@ -6,6 +6,7 @@ import { ContactUs } from './pages/contact-us/contact-us';
 import { TimeTablesComponent } from './pages/time-tables/time-tables';
 
 import { TeachersComponent } from './pages/teachers/teachers';
+import { MathsLessonsComponent } from './pages/maths-lessons/maths-lessons';
 
 export const routes: Routes = [
     {path: '' , component: Home},
@@ -14,6 +15,7 @@ export const routes: Routes = [
     {path: 'classes', component: Classes},
     {path: 'contact-us', component: ContactUs},
     {path: 'time-tables', component: TimeTablesComponent},
-    {path: 'teachers', component: TeachersComponent}
+    {path: 'teachers', component: TeachersComponent},
+    {path: 'maths-lessons', component: MathsLessonsComponent}
 
 ];
