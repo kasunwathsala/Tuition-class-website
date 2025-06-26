@@ -1,1 +1,25 @@
-<p>teachers works!</p>
+<div class="container-fluid py-5" style="background-image: url('assets/tback1.jpg'); background-size: cover; background-position: center;">
+  <!-- Search bar -->
+  <div class="row mb-4">
+    <div class="col-md-6 mx-auto">
+      <input type="text" class="form-control shadow-sm" placeholder="Search by name or subject"
+             [(ngModel)]="searchValue" (input)="onSearch(searchValue)">
+    </div>
+  </div>
+
+  <!-- Bootstrap Cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let teacher of filteredTeachers">
+        <div class="card h-100 shadow-lg teacher-card" style="transition: transform 0.3s;">
+          <img [src]="teacher.image" class="card-img-top" height="200" style="object-fit: cover;" alt="Teacher Image">
+          <div class="card-body text-center bg-light-subtle">
+            <h5 class="card-title fw-bold">{{ teacher.name }}</h5>
+            <p class="card-text text-secondary">{{ teacher.subject }}</p>
+            <button class="btn btn-outline-primary">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

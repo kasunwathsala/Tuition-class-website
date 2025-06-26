@@ -1,1 +1,22 @@
-<p>Time Table</p>
+<div class="container my-4">
+  <!-- Subject buttons -->
+  <div class="mb-4">
+    <button *ngFor="let subject of subjects"
+            class="btn btn-outline-primary me-2 mb-2"
+            (click)="selectSubject(subject)"
+            [class.active]="subject === selectedSubject">
+      {{ subject }}
+    </button>
+  </div>
+
+  <!-- Timetable list -->
+  <div *ngIf="selectedSubject">
+    <h4>Time Table for {{ selectedSubject }}</h4>
+    <ul class="list-group">
+      <li *ngFor="let time of selectedTimetable" class="list-group-item">
+        {{ time }}
+      </li>
+    </ul>
+  </div>
+</div>
+

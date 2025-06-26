@@ -1,30 +1,38 @@
-<div class="container-fluid py-5 bg-primary"
+<div class="container-fluid d-flex align-items-center py-4"
      style="
+       min-height: 100vh;
        background: 
-         linear-gradient(to right, rgba(255,255,255,0.8), rgba(49,121,131,0.8)),
+         linear-gradient(to right, rgba(255,255,255,0.9), rgba(49,121,131,0.9)),
          url('https://thumbs.dreamstime.com/z/abstract-background-graduation-day-ideas-celebration-university-graduates-education-college-startup-diploma-future-ceremony-361527801.jpg?ct=jpeg');
        background-repeat: no-repeat;
        background-size: cover;
        background-position: center;">
-  <div class="container col-xxl-8 px-4 py-5"> 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+
+  <div class="container">
+    <div class="row flex-lg-row-reverse align-items-center g-4">
+      
       <!-- Right side image -->
-      <div class="col-10 col-sm-8 col-lg-6 animate-right"> 
-        <img src="https://www.lawyerscommittee.org/wp-content/uploads/2020/02/Portrait-Of-Smiling-Male-And-Female-College-Students-With-Teachers-Outside-School-Building-1133755112_3869x2579.jpeg"
-             class="d-block mx-lg-auto img-fluid"
-             alt="Students" width="700" height="500" loading="lazy">
+      <div class="col-12 col-md-6 mb-3 mb-md-0 animate-right">
+        <img 
+          src="https://www.lawyerscommittee.org/wp-content/uploads/2020/02/Portrait-Of-Smiling-Male-And-Female-College-Students-With-Teachers-Outside-School-Building-1133755112_3869x2579.jpeg"
+          class="d-block mx-auto img-fluid rounded shadow"
+          alt="Students"
+          loading="lazy"
+          style="max-height: 350px; object-fit: cover;">
       </div>
+
       <!-- Left side text -->
-      <div class="col-lg-6 animate-left">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to eduManage</h1> 
-        <p class="lead">
-          eduManage is a comprehensive, user-friendly educational management system designed to streamline every aspect of academic administration. From managing student records and organizing class schedules to enhancing communication between students, teachers, and administrators, eduManage brings efficiency, clarity, and control to your institution — all in one powerful platform.
+      <div class="col-12 col-md-6 animate-left text-dark">
+        <h1 class="display-6 fw-bold lh-1 mb-3">Welcome to eduManage</h1>
+        <p class="lead mb-4">
+          eduManage is a user-friendly educational system for managing student records, class schedules, and more — bringing efficiency and control to your institution.
         </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get Start Now</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" (click) = "goTimetable()">View Time Tables</button>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4">Get Start Now</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" (click)="goTimetable()">View Time Tables</button>
         </div>
       </div>
+
     </div>
   </div>
 </div>

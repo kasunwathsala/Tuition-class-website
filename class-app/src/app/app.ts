@@ -6,15 +6,15 @@ import { Classes } from './pages/classes/classes';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { AboutUs } from './pages/about-us/about-us';
 import { Footer } from './common/footer/footer';
-import { TimeTables } from './pages/time-tables/time-tables';
-import { Teachers } from './pages/teachers/teachers';
+import {  TimeTablesComponent } from './pages/time-tables/time-tables';
+import { TeachersComponent } from './pages/teachers/teachers';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Header, Home,AboutUs,Classes,ContactUs,Footer,RouterOutlet,TimeTables,Teachers],
+  imports: [Header, Home,AboutUs,Classes,ContactUs,Footer,RouterOutlet,TimeTablesComponent,TeachersComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
