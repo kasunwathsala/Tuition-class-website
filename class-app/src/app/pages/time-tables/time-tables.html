@@ -1,22 +1,33 @@
-<div class="container my-4">
-  <!-- Subject buttons -->
-  <div class="mb-4">
-    <button *ngFor="let subject of subjects"
-            class="btn btn-outline-primary me-2 mb-2"
-            (click)="selectSubject(subject)"
-            [class.active]="subject === selectedSubject">
-      {{ subject }}
-    </button>
-  </div>
+<div class="container-fluid py-4"
+     style="
+       background: 
+         linear-gradient(to right, rgba(255,255,255,0.95), rgba(49,121,131,0.1)),
+         url('assets/time.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       min-height: 100vh;
+     ">
+  
+  <div class="container my-4">
+    <!-- Subject buttons -->
+    <div class="mb-4">
+      <button *ngFor="let subject of subjects"
+              class="btn btn-outline-primary me-5 mb-2"
+              (click)="selectSubject(subject)"
+              [class.active]="subject === selectedSubject">
+        {{ subject }}
+      </button>
+    </div>
 
-  <!-- Timetable list -->
-  <div *ngIf="selectedSubject">
-    <h4>Time Table for {{ selectedSubject }}</h4>
-    <ul class="list-group">
-      <li *ngFor="let time of selectedTimetable" class="list-group-item">
-        {{ time }}
-      </li>
-    </ul>
+    <!-- Timetable list (no animation) -->
+    <div *ngIf="selectedSubject">
+      <h4>Time Table for {{ selectedSubject }}</h4>
+      <ul class="list-group">
+        <li *ngFor="let time of selectedTimetable" class="list-group-item">
+          {{ time }}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
-
